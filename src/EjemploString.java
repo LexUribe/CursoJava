@@ -22,5 +22,17 @@ public class EjemploString {
         System.out.println("\ncurso3 = " + curso3);
         esIgual = curso == curso3;
         System.out.println("\"curso == curso3\" = " + esIgual);
+
+        //Carácter de escape barra invertida (\) convierte los caracteres especiales en caracteres de cadena.
+        System.out.println("\'Comilla simple, Single quote\'");
+        System.out.println("\"Comilla doble, Double quote\"");
+        System.out.println("\\Barra invertida, Backslash\\");
+
+        //Otras secuencias de escape comunes.
+        System.out.println("\nSalto de linea, \nNew Line");
+        System.out.println("\rRetorno de carro, \rCarriage Return");
+        System.out.println("\tTabulador\t, Tab");
+        System.out.println("Re\btroceso,\b Backspace");
+        System.out.println("\f,\f Form Feed");
     }
 }

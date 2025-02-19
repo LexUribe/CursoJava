@@ -3,7 +3,7 @@ public class EjemploStringConcatenacion {
         //Concatenación de objetos de la clase String.
         //Concatenación cadenas de texto.
         String curso = "Programación Java"; //Método estándar (Forma literal) abreviado por ser una clase muy usada.
-        String profesor = "Alvaro Uribe ParacoHP";
+        String profesor = "Bruce Dickinson";
 
         String detalle = curso + " con el instructor " + profesor;
         System.out.println(detalle);
