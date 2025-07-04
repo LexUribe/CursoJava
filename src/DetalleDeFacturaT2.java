@@ -44,11 +44,10 @@ public class DetalleDeFacturaT2 {
                 totalNeto = totalBruto + impuesto;
 
         // Mostrar en un solo String el nombre de la factura, el monto total bruto (antes de impuesto), el impuesto y el monto total neto incluyendo impuesto.
-        System.out.println("------------------------------------ DETALLE DE FACTURA " + nombre + " ------------------------------------");
+        System.out.println("------------------------------------ DETALLE DE FACTURA " + nombre.toUpperCase() + " ------------------------------------");
 
         String detalle = "La factura " + nombre + " tiene un total bruto de " + totalBruto + ", con un impuesto de " +
                 impuesto + " y el monto después de impuesto es de " + totalNeto + ".";
         System.out.println(detalle);
-
     }
 }
