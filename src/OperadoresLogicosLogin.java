@@ -44,10 +44,14 @@ public class OperadoresLogicosLogin {
 
         // Usando un arreglo de String.
         for (int i = 0; i < usernames.length; i++) {
-            if( (usernames[i].equals(user) && passwords[i].equals(pass))) {
+            // Sentencia if, sirve cuando son listas grandes y toca implementar "break" para salir del ciclo for. Listas de 100 elementos o más.
+            /*if( (usernames[i].equals(user) && passwords[i].equals(pass))) {
                 autenticado = true;
                 break;
-            }
+            }*/
+
+            // Operadores Ternarios, sirve cuando la lista es de 10 elementos o menos.
+            autenticado = (usernames[i].equals(user) && passwords[i].equals(pass)) ? true : autenticado;
         }
 
         // Usando la clase String.
@@ -58,11 +62,18 @@ public class OperadoresLogicosLogin {
         }*/
 
         // Usando un arreglo de String.
-        if(autenticado) {
+        // Sentencia if, sirve para gran cantidad de elementos.
+        /*if(autenticado) {
             System.out.println("\nBienvenido a mi App... ".concat(user).concat("!"));
         } else {
             System.out.println("\nEl usuario no existe o la contraseña es incorrecta.");
             System.out.println("\nNo puede ingresar, ¡Requiere autenticación!.");
-        }
+        }*/
+
+        // Operadores Ternarios, sirve para pocos elementos.
+        String mensaje = autenticado ? "\nBienvenido a mi App... ".concat(user).concat("!") :
+                "\nEl usuario no existe o la contraseña es incorrecta." + "\nNo puede ingresar, ¡Requiere autenticación!."; // "\nEl usuario no existe o la contraseña es incorrecta. \nNo puede ingresar, ¡Requiere autenticación!."
+
+        System.out.println("mensaje = " + mensaje);
     }
 }
